@@ -1,6 +1,19 @@
 <script>
 let person = {
-  name:{first:"太郎", last:"独習"}   // 
-}
+  name:{first:"太郎", last:"独習"} ,  // オブジェクトの name プロパティにオブジェクトを設定
+  age: 18
+};
+
+console.log(person.age);    // age プロパティの値の取得
+
+console.log(person.name.last);  // name プロパティに設定されたオブジェクトの lase プロパティの値の取得
+
+person.name.lase = "次郎"  // last プロパティの値の変更
+person.gender = "男";
+person.family = {wife: "花子", child: "三郎"}; // family プロパティに他のオブジェクトを追加
+
+console.log(person.family.wife);  // 追加したオブジェクトのプロパティを確認
+
+console.log(person);   // オブジェクトの中身を確認
 </script>
 
