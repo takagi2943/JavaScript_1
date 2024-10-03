@@ -1,0 +1,23 @@
+<!-- <script>
+  const members = {
+    member1: "太郎",
+    member2: "次郎"
+  };
+
+  const keyBase = "member";
+
+  console.log(members[keyBase + "1"]); // 文字列が結合されて member1 になる  ＞太郎
+  
+  console.log(members[keyBase + "2"]); // 文字列が結合されて member2 になる  ＞次郎
+</script> -->
+
+<!-- オブジェクトリテラル内のブラケット記法 -->
+<script>
+  const keyBase = "member";
+  let members = {
+    [keyBase + "1"]:"太郎",
+    [keyBase + "2"]:"次郎",
+  };
+  console.log(members);
+  // ＞{nember1:"太郎",member2:"次郎"}
+</script>
