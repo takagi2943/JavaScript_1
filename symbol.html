@@ -1,0 +1,13 @@
+<script>
+  let mySymbl1 = Symbol();  // ある Symbol の値
+  let mySymbl2 = Symbol();  // 別の Symbol の値
+
+  const obj = {
+    [mySymbl1]: "値1", // シンボルをキーにプロパティを定義
+    [mySymbl2]() {console.log("こんにちは");}  // シンボルをキーにメソッドを定義
+  };
+
+  console.log(obj[mySymbl1]); // シンボルをキーに値を取得 ＞値1
+
+  obj[mySymbl2]();  // シンボルをキーにメソッドを実行 ＞こんにちは
+</script>
