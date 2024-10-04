@@ -1,0 +1,31 @@
+<!-- <script>
+  // Window オブジェクトの alert メソッドを実行
+  window.alert("hello");
+  window["alert"]("");
+
+  // console オブジェクトの log メソッドを実行
+  console.log("hello");
+  console["log"]("hello");
+</script> -->
+
+<!-- オブジェクトリテラル内のメソッドの表記法 -->
+ <!-- <script>
+    let person = {
+      hello() {console.log("こんにちは");}   // hello:function() {...}を省略した記述
+    };
+
+    person.hello();  // ＞こんにちは
+ </script> -->
+
+ <!-- 識別子をそのままプロパティ名として利用 -->
+  <script>
+    let val = 10;  // 変数の宣言
+    function fn() {} // 関数の宣言
+
+    const obj = {
+      val,   // 「 val: val 」を省略した記述
+      fn     // 「 fn: fn 」を省略いた記述
+    };
+
+    console.log(obj);   // ＞{ val: 10, fn: function() }
+  </script>
